@@ -42,9 +42,14 @@ label{
 
 .card-rounded{
   text-align: center;
+  border-radius: 10px;
 }
 .ticket{
   /* height: 200px; */
+}
+
+.col{
+  display: block;
 }
 
 
@@ -57,6 +62,7 @@ label{
 }
 .ticket-box{
   background-color: lightgray;
+
 }
 .ticket-box, p{
   text-align: left;
