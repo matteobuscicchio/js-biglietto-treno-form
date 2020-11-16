@@ -2,8 +2,9 @@
 var btnGenera = document.getElementById('btn-genera');
 
 
-btnGenera.addEventListener("click", function () {
+btnGenera.addEventListener("click", function() {
   var offer = document.getElementById('offer');
+
   // Genera Ticket
   console.log("Genera il Ticket");
 
@@ -24,17 +25,17 @@ btnGenera.addEventListener("click", function () {
   var ticketPrice = costPerKm * km;
   console.log(ticketPrice);
 
-  if(fascia == "minorenne"){
+  if (fascia == "minorenne") {
     console.log("Applica 20% di sconto");
     offer = "Sconto <br> Minorenni";
-    var lowPriceDiscount = (ticketPrice * 80) /100; //sconto 20%
+    var lowPriceDiscount = (ticketPrice * 80) / 100; //sconto 20%
     var finalPrice = lowPriceDiscount;
-  }else if (fascia == "over65") {
+  } else if (fascia == "over65") {
     console.log("Applica 40% di sconto");
     offer = "Sconto <br> Over 65";
-    var highPriceDiscount = (ticketPrice * 60) /100; //sconto 40%
+    var highPriceDiscount = (ticketPrice * 60) / 100; //sconto 40%
     var finalPrice = highPriceDiscount;
-  }else if (fascia == "maggiorenne") {
+  } else if (fascia == "maggiorenne") {
     offer = "Tariffa <br> Standard";
     var finalPrice = ticketPrice
   } else {
@@ -49,8 +50,8 @@ btnGenera.addEventListener("click", function () {
   var priceTicket = document.getElementById('ticket-price');
 
   // Genera numero Carrozza
-  var numberCarrozza = Math.floor(Math.random() * 19) + 1 ;
-  var codiceCp = Math.floor(Math.random() * (100000 - 90000)) + 90000 ;
+  var numberCarrozza = Math.floor(Math.random() * 19) + 1;
+  var codiceCp = Math.floor(Math.random() * (100000 - 90000)) + 90000;
 
   // Inserire dati nel BIGLIETTO
   ticketName.innerHTML = fullName;
@@ -64,7 +65,7 @@ btnGenera.addEventListener("click", function () {
 // undoBtn
 var btnAnnulla = document.getElementById('btn-annulla');
 
-btnAnnulla.addEventListener("click", function () {
+btnAnnulla.addEventListener("click", function() {
   // Annulla
   console.log("Annula operazione");
   // document.getElementById('biglietto').style.display = "none";
