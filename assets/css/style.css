@@ -78,9 +78,6 @@ label{
 .name-box{
   background-color: gray;
 }
-.ticket-box{
-  background-color: lightgray;
-}
 .ticket-box, p{
   text-align: left;
 }
