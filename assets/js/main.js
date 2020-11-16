@@ -27,22 +27,18 @@ btnGenera.addEventListener("click", function () {
   if(fascia == "minorenne"){
     console.log("Applica 20% di sconto");
     offer = "Sconto Minorenni";
+    var lowPriceDiscount = (ticketPrice * 80) /100; //sconto 20%
+    var finalPrice = lowPriceDiscount;
   }else if (fascia == "over65") {
     console.log("Applica 40% di sconto");
     offer = "Sconto Over 65";
-  }else if (fascia == "maggiorenne") {
-    offer = "Tariffa Standard";
-  }
-
-  if (fascia == "minorenne") {
-    var lowPriceDiscount = (ticketPrice * 80) /100; //sconto 20%
-    var finalPrice = lowPriceDiscount;
-  } else if (fascia == "over65") {
     var highPriceDiscount = (ticketPrice * 60) /100; //sconto 40%
     var finalPrice = highPriceDiscount;
-  }
-  else if (fascia == "maggiorenne"){
+  }else if (fascia == "maggiorenne") {
+    offer = "Tariffa Standard";
     var finalPrice = ticketPrice
+  } else {
+    var finalPrice = "0"
   }
 
   // Inserire dati nel BIGLIETTO
@@ -53,7 +49,7 @@ btnGenera.addEventListener("click", function () {
   var priceTicket = document.getElementById('ticket-price');
 
   // Genera numero Carrozza
-  var numberCarrozza = Math.floor(Math.random() * 9) + 1 ;
+  var numberCarrozza = Math.floor(Math.random() * 19) + 1 ;
   var codiceCp = Math.floor(Math.random() * (100000 - 90000)) + 90000 ;
 
   // Inserire dati nel BIGLIETTO
@@ -115,16 +111,16 @@ btnAnnulla.addEventListener("click", function () {
 // var ticketPrice = costPerKm * km;
 
 // va applicato uno sconto del 20% per i minorenni; del 40% per gli over 65
-if (fascia == "minorenne") {
-  var lowPriceDiscount = (ticketPrice * 80) /100; //sconto 20%
-  var finalPrice = lowPriceDiscount;
-} else if (fascia == "over65") {
-  var highPriceDiscount = (ticketPrice * 60) /100; //sconto 40%
-  var finalPrice = highPriceDiscount;
-}
-else if (fascia == "maggiorenne"){
-  var standardPrice = ticketPrice
-}
+// if (fascia == "minorenne") {
+//   var lowPriceDiscount = (ticketPrice * 80) /100; //sconto 20%
+//   var finalPrice = lowPriceDiscount;
+// } else if (fascia == "over65") {
+//   var highPriceDiscount = (ticketPrice * 60) /100; //sconto 40%
+//   var finalPrice = highPriceDiscount;
+// }
+// else if (fascia == "maggiorenne"){
+//   var standardPrice = ticketPrice
+// }
 
 // prezzo finale visibile nella pagina
 // document.getElementById('price').innerHTML = "Gentilissim* " + userName +" il prezzo del suo biglietto corrisponde ad un totale di €" + Math.round(finalPrice);
