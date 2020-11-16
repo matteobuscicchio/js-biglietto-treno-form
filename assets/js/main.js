@@ -26,16 +26,16 @@ btnGenera.addEventListener("click", function () {
 
   if(fascia == "minorenne"){
     console.log("Applica 20% di sconto");
-    offer = "Sconto Minorenni";
+    offer = "Sconto <br> Minorenni";
     var lowPriceDiscount = (ticketPrice * 80) /100; //sconto 20%
     var finalPrice = lowPriceDiscount;
   }else if (fascia == "over65") {
     console.log("Applica 40% di sconto");
-    offer = "Sconto Over 65";
+    offer = "Sconto <br> Over 65";
     var highPriceDiscount = (ticketPrice * 60) /100; //sconto 40%
     var finalPrice = highPriceDiscount;
   }else if (fascia == "maggiorenne") {
-    offer = "Tariffa Standard";
+    offer = "Tariffa <br> Standard";
     var finalPrice = ticketPrice
   } else {
     var finalPrice = "0"
@@ -77,7 +77,7 @@ btnAnnulla.addEventListener("click", function () {
   fullNameInput.value = "";
   kmInput.value = "";
   fasciaInput.value = "vuoto";
-  
+
   // reset ticket
   var ticketName = document.getElementById('nome-passeggero');
   var ticketSconto = document.getElementById('sconto');
