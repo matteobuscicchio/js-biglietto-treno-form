@@ -13,28 +13,28 @@
 
   </head>
 
-  <body class="container">
+  <body class="bk_cl_B91450">
 
 
-    <section id="calcolo-biglietto">
+    <section id="calcolo-biglietto container">
 
       <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
-      <div class="card-rounded">
+      <div class="card-rounded container">
 
         <div class="row">
 
-          <div class="col">
+          <div class="col-lg-4">
             <label for="name">Nome e Cognome</label>
             <input type="text" name="name" id="full-name">
           </div>
 
-          <div class="col">
+          <div class="col-lg-4">
             <label for="name">Km da percorrere</label>
             <input type="number" class="km" id="km">
           </div>
 
-          <div class="col">
+          <div class="col-lg-4">
             <label for="fascia">Fascia di età</label>
             <select name="fascia" id="fascia">
               <option value="vuoto"></option>
@@ -44,7 +44,7 @@
             </select>
           </div>
         </div>
-        
+
         <div class="row">
           <button id="btn-genera">Genera</button>
           <button id="btn-annulla">Annulla</button>
@@ -54,8 +54,10 @@
 
 
     <section id="bliglietto">
+
       <h2>IL TUO BIGLIETTO</h2>
-      <div class="ticket">
+
+      <div class="ticket container">
 
         <h3>DETTAGLIO PASSEGGERI</h3>
         <hr>
@@ -63,31 +65,31 @@
         <div class="row">
 
 
-          <div class="name-box">
+          <div class="name-box col-lg-2">
             <p>NOME <br> PASSEGGERO</p>
             <div id="nome-passeggero"></div>
           </div>
 
 
-          <div class="ticket-box">
+          <div class="ticket-box col-lg-10 row">
 
-            <div>
+            <div class="col-lg-3">
               <p>Offerta</p>
               <div id="sconto"></div>
             </div>
 
-            <div>
+            <div class="col-lg-3">
               <p>Carrozza</p>
               <div id="carrozza"></div>
             </div>
 
-            <div>
+            <div class="col-lg-3">
               <p>CODICE <br> CP</p>
               <div id="codice-cp"></div>
             </div>
 
 
-            <div>
+            <div class="col-lg-3">
               <p>Costo <br> Biglietto</p>
               <div id="ticket-price"></div>
             </div>

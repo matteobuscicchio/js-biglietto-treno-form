@@ -6,6 +6,30 @@
 }
 /* /reset/ */
 
+/* utility */
+.bk_cl_B91450{
+  background-color: #B91450;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+  float: left;
+}
+/* /utility/ */
+
 body{
   /* colore di debug */
   background-color: lightgray;
@@ -15,10 +39,7 @@ body h2{
   margin: 30px 0 0;
   text-align: center;
 }
-.container{
-  background-color: #B91450;
-  max-width: 100%;
-}
+
 
 button{
   padding: 5px;
@@ -35,7 +56,6 @@ label{
 }
 
 .card-rounded, .ticket{
-  width: 80%;
   background-color: white;
   padding: 20px;
 }
@@ -44,9 +64,6 @@ label{
   text-align: center;
   border-radius: 10px;
 }
-.ticket{
-  /* height: 200px; */
-}
 
 .col{
   display: block;
@@ -54,17 +71,55 @@ label{
 
 
 /* biglietto */
+.name-box, .ticket-box{
+  height: 150px;
+}
 
 .name-box{
   background-color: gray;
-  width: 150px;
-  height: 100px;
 }
 .ticket-box{
   background-color: lightgray;
-
 }
 .ticket-box, p{
   text-align: left;
-  padding: 20px;
+}
+
+
+/* col */
+.col-lg-1 {
+  width: calc((100%/12) *1);
+}
+.col-lg-2 {
+  width: calc((100%/12) *2);
+}
+.col-lg-3 {
+  width: calc((100%/12) *3);
+}
+.col-lg-4 {
+  width: calc((100%/12) *4);
+}
+.col-lg-5 {
+  width: calc((100%/12) *5);
+}
+.col-lg-6 {
+  width: 50%;
+}
+.col-lg-7 {
+  width: calc((100%/12) *7);
+}
+.col-lg-8 {
+  width: calc((100%/12) *8);
+}
+.col-lg-9 {
+  width: calc((100%/12) *9);
+}
+.col-lg-10 {
+  width: calc((100%/12) *10);
+}
+.col-lg-11 {
+  width: calc((100%/12) *11);
+}
+.col-lg-12 {
+  width: 100%;
 }
