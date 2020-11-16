@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>js-biglietto-treno-form</title>
+
+    <!-- AGGIUNGERE I/IL PERCORSO/I DI CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- /AGGIUNGERE I/IL PERCORSO/I DI CSS/ -->
+
+  </head>
+  
+  <body>
+
+
+    <section id="calcolo-biglietto">
+      <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+      <div class="card-rounded">
+        <div class="row">
+          <div class="col">
+            <label for="name">Nome e Cognome</label>
+            <input type="text" name="name" id="full-name">
+          </div>
+          <div class="col">
+            <label for="name">Km da percorrere</label>
+            <input type="number" class="km" id="km">
+          </div>
+          <div class="col">
+            <label for="fascia">Fascia di età</label>
+            <select name="fascia" id="fascia">
+              <option value="vuoto"></option>
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over65">Over 65</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <button id="btn-genera">Genera</button>
+          <button id="btn-annulla">Annulla</button>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="bliglietto">
+      <h2>Biglietto</h2>
+      <div id="nome-passeggero"></div>
+      <div id="sconto"></div>
+      <div id="carrozza"></div>
+      <div id="codice-cp"></div>
+      <div id="ticket-price"></div>
+    </section>
+
+
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+
+
+  </body>
+</html>
