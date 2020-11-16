@@ -73,11 +73,12 @@ btnAnnulla.addEventListener("click", function () {
   var kmInput = document.getElementById('km');
   var fasciaInput = document.getElementById('fascia');
 
+  // reset calcolo ticket
   fullNameInput.value = "";
   kmInput.value = "";
   fasciaInput.value = "vuoto";
-
-
+  
+  // reset ticket
   var ticketName = document.getElementById('nome-passeggero');
   var ticketSconto = document.getElementById('sconto');
   var ticketCarrozza = document.getElementById('carrozza');
