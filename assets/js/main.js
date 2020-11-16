@@ -90,37 +90,3 @@ btnAnnulla.addEventListener("click", function () {
   ticketCarrozza.innerHTML = "";
   ticketCodice.innerHTML = "";
 })
-
-
-// VECCHI CODICE USARE COME LINEAGUIDA
-
-// nome utente
-// var userName = prompt("Salve, qual è il suo nome?");
-
-// età del passeggero
-// var userAge = parseInt(prompt("Gentilissim* " + userName + " Quanti anni hai?"));
-// var currentYear = 2020;
-// var yearOfBirth = currentYear - userAge;
-
-
-// numero di chilometri che vuole percorrere
-// var userKm = parseInt(prompt(userName + " quanti Km intende coprire?"));
-
-// prezzo senza sconto
-// var costPerKm = 0.21;
-// var ticketPrice = costPerKm * km;
-
-// va applicato uno sconto del 20% per i minorenni; del 40% per gli over 65
-// if (fascia == "minorenne") {
-//   var lowPriceDiscount = (ticketPrice * 80) /100; //sconto 20%
-//   var finalPrice = lowPriceDiscount;
-// } else if (fascia == "over65") {
-//   var highPriceDiscount = (ticketPrice * 60) /100; //sconto 40%
-//   var finalPrice = highPriceDiscount;
-// }
-// else if (fascia == "maggiorenne"){
-//   var standardPrice = ticketPrice
-// }
-
-// prezzo finale visibile nella pagina
-// document.getElementById('price').innerHTML = "Gentilissim* " + userName +" il prezzo del suo biglietto corrisponde ad un totale di €" + Math.round(finalPrice);

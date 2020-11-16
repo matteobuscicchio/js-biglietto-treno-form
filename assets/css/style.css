@@ -5,10 +5,25 @@
   box-sizing: border-box;
 }
 /* /reset/ */
+
 body{
-  background-color: gray;
+  /* colore di debug */
+  background-color: lightgray;
+}
+body h2{
+  color: white;
+  margin: 30px 0 0;
 }
 .container{
-  background-color: lightgray;
+  background-color: #B91450;
   text-align: center;
+}
+
+
+.card-rounded, .ticket{
+  background-color: white;
+  padding: 20px;
+}
+label{
+  color: #B91450;
 }
