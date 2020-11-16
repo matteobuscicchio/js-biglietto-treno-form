@@ -44,5 +44,20 @@ label{
   text-align: center;
 }
 .ticket{
-  height: 200px;
+  /* height: 200px; */
+}
+
+
+/* biglietto */
+
+.name-box{
+  background-color: gray;
+  width: 150px;
+}
+.ticket-box{
+  background-color: lightgray;
+}
+.ticket-box, p{
+  text-align: left;
+  padding: 20px;
 }
